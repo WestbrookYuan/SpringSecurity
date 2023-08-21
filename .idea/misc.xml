@@ -7,6 +7,9 @@
         <option value="$PROJECT_DIR$/Springboot-001-hello/pom.xml" />
         <option value="$PROJECT_DIR$/springsecurity-002-config-file/pom.xml" />
         <option value="$PROJECT_DIR$/springsecurity-003-memory/pom.xml" />
+        <option value="$PROJECT_DIR$/springsecurity-004-encoder/pom.xml" />
+        <option value="$PROJECT_DIR$/springsecurity-005-login-user/pom.xml" />
+        <option value="$PROJECT_DIR$/springsecurity-006-url/pom.xml" />
       </list>
     </option>
   </component>

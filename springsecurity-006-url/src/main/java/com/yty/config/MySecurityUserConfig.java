@@ -5,13 +5,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
-import org.springframework.security.provisioning.UserDetailsManager;
-import org.springframework.stereotype.Service;
 
 /**
  * @author yty
@@ -23,8 +19,20 @@ import org.springframework.stereotype.Service;
 public class MySecurityUserConfig {
     @Bean
     public UserDetailsService userDetailService(){
-        UserDetails user = User.builder().username("xjf").password(passwordEncoder().encode("175146")).roles("student").build();
-        UserDetails user1 = User.builder().username("wc").password(passwordEncoder().encode("175148")).roles("teacher").build();
+        /**
+         * authority和roles哪个在后面哪个起作用
+         */
+        UserDetails user = User.builder()
+                .username("xjf")
+                .password(passwordEncoder().encode("175146"))
+                .roles("student")
+                .authorities("student:add", "student:delete")
+                .build();
+        UserDetails user1 = User.builder()
+                .username("wc")
+                .password(passwordEncoder().encode("175148"))
+                .authorities("teacher:add", "teacher:delete")
+                .roles("teacher").build();
         InMemoryUserDetailsManager inMemoryUserDetailsManager = new InMemoryUserDetailsManager();
         inMemoryUserDetailsManager.createUser(user);
         inMemoryUserDetailsManager.createUser(user1);
