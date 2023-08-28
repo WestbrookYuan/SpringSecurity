@@ -12,6 +12,7 @@
         <module name="springsecurity-002-config-file" />
         <module name="springsecurity-003-memory" />
         <module name="Springboot-001-hello" />
+        <module name="springsecurity-007-method" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -29,6 +30,7 @@
       <module name="springsecurity-005-login-user (1)" options="-parameters" />
       <module name="springsecurity-005-login-user (2)" options="-parameters" />
       <module name="springsecurity-006-url" options="-parameters" />
+      <module name="springsecurity-007-method" options="-parameters" />
     </option>
   </component>
 </project>

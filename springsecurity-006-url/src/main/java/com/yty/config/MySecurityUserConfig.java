@@ -40,7 +40,7 @@ public class MySecurityUserConfig {
     }
 
     /**
-     * 密码编码器 但不加密
+     * 密码编码器
      * @return
      */
     @Bean

@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/springsecurity-004-encoder/pom.xml" />
         <option value="$PROJECT_DIR$/springsecurity-005-login-user/pom.xml" />
         <option value="$PROJECT_DIR$/springsecurity-006-url/pom.xml" />
+        <option value="$PROJECT_DIR$/springsecurity-007-method/pom.xml" />
       </list>
     </option>
   </component>
