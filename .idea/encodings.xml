@@ -10,5 +10,9 @@
     <file url="file://$PROJECT_DIR$/springsecurity-006-url/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springsecurity-006-url/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springsecurity-007-method/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springsecurity-008-json/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springsecurity-009-user-detail-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springsecurity-010-database-authentication/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springsecurity-011-database-authentication/src/main/java" charset="UTF-8" />
   </component>
 </project>
